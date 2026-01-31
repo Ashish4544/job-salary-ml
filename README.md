@@ -1,35 +1,66 @@
-💼 AI Job Salary Prediction (End-to-End ML Project)
+💼 AI Job Salary Prediction
 
-An end-to-end Machine Learning project that predicts AI/Data Science job salaries based on role, experience, company details, and work type.
-The project covers the complete ML lifecycle — from data understanding to deployment-ready API and UI.
+An end-to-end Machine Learning project that predicts AI & Data Science job salaries using real-world job market data.
 
-🚀 Project Highlights:
+🚀 Overview
 
-🔍 Real-world dataset (50,000+ job postings)
-🧠 Feature engineering using Scikit-learn Pipelines
-📊 Model experimentation & tracking with MLflow
-🤖 Baseline + tree-based models (Ridge, Random Forest)
-⚡ REST API using FastAPI
-🎨 Interactive UI for predictions
-🧪 Reproducible, clean project structure
+📊 Real dataset (50k+ job postings)
 
-🛠️ Tech Stack:
-Python
-Pandas, NumPy
-Scikit-learn
-MLflow
-FastAPI
+🧠 Feature engineering with Scikit-learn pipelines
 
-📌 Key Learnings
+📈 Model tracking using MLflow
 
--End-to-end ML system design
--Pipeline-based feature engineering
--Model tracking & experiment comparison
--API + UI integration
--Clean Git & project structuring
+🤖 Models: Ridge Regression & Random Forest
 
+⚡ FastAPI backend for predictions
 
+🎨 Simple UI for user interaction
 
-Joblib
+📂 Project Structure
+job-salary-ml/
+├── data/raw/ai_jobs.csv
+├── notebooks/
+│   ├── 01_data_understanding.ipynb
+│   ├── 03_feature_engineering.ipynb
+│   ├── 04_model_training.ipynb
+│   ├── 05_mlflow_tracking.ipynb
+│   ├── 06_hyperparameter_tuning.ipynb
+│   └── 07_final_model.ipynb
+├── src/salary_api.py
+├── ui/app.py
+├── requirements.txt
+└── README.md
 
-VS Code
+🧠 ML Workflow
+
+Data Understanding & EDA
+
+Feature Engineering (pipelines & encoders)
+
+Model Training & Evaluation
+
+Experiment Tracking (MLflow)
+
+API & UI Integration
+
+📈 Model Performance
+Model	MAE (USD)	RMSE (USD)
+Ridge	~3,520	~4,220
+Random Forest	~3,525	~4,225
+
+Low error compared to average salaries (~100k+ USD).
+
+⚡ Run Locally
+Backend (FastAPI)
+uvicorn src.salary_api:app --reload
+
+UI
+python ui/app.py
+
+🛠️ Tech Stack
+
+Python · Pandas · Scikit-learn · MLflow · FastAPI · Joblib · VS Code
+
+👤 Author
+
+Ashish Shirke
