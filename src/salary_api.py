@@ -15,7 +15,7 @@ logger = logging.getLogger(__name__)
 # LOAD MODEL
 
 BASE_DIR = Path(__file__).resolve().parent.parent
-FINAL_MODEL_PATH = BASE_DIR / "models" / "final_model.pkl"
+FINAL_MODEL_PATH = BASE_DIR / "models" / "final_model1.pkl"
 RIDGE_MODEL_PATH = BASE_DIR / "models" / "ridge_salary_pipeline.pkl"
 
 if FINAL_MODEL_PATH.exists():

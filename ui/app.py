@@ -3,7 +3,7 @@ import requests
 import os
 from datetime import datetime
 
-DEFAULT_API_URL = os.getenv("SALARY_API_URL", "http://127.0.0.1:8000/predict")
+DEFAULT_API_URL = os.getenv("SALARY_API_URL", "https://ds-salary-trend.onrender.com/predict")
 
 st.set_page_config(
     page_title="AI Job Salary Predictor",
@@ -18,7 +18,7 @@ st.sidebar.subheader("Settings")
 API_URL = st.sidebar.text_input(
     "API URL",
     value=DEFAULT_API_URL,
-    help="FastAPI predict endpoint, e.g. http://127.0.0.1:8000/predict",
+    help="FastAPI predict endpoint, e.g. https://ds-salary-trend.onrender.com/predict",
 )
 
 # ======================
