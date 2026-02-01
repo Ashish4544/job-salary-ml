@@ -17,6 +17,7 @@ An end-to-end Machine Learning project that predicts AI & Data Science job salar
 🎨 Simple UI for user interaction
 
 📂 Project Structure
+
 job-salary-ml/
 
 ├── data/raw/ai_jobs.csv
@@ -24,15 +25,25 @@ job-salary-ml/
 ├── notebooks/
 
 │   ├── 01_data_understanding.ipynb
+
 │   ├── 03_feature_engineering.ipynb
+
 │   ├── 04_model_training.ipynb
+
 │   ├── 05_mlflow_tracking.ipynb
+
 │   ├── 06_hyperparameter_tuning.ipynb
+
 │   └── 07_final_model.ipynb
+
 ├── src/salary_api.py
+
 ├── ui/app.py
+
 ├── requirements.txt
+
 └── README.md
+
 
 🧠 ML Workflow
 
@@ -47,6 +58,7 @@ Experiment Tracking (MLflow)
 API & UI Integration
 
 📈 Model Performance
+
 Model	MAE (USD)	RMSE (USD)
 Ridge	~3,520	~4,220
 Random Forest	~3,525	~4,225
@@ -55,6 +67,7 @@ Low error compared to average salaries (~100k+ USD).
 
 ⚡ Run Locally
 Backend (FastAPI)
+
 uvicorn src.salary_api:app --reload
 
 UI
