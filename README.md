@@ -18,8 +18,11 @@ An end-to-end Machine Learning project that predicts AI & Data Science job salar
 
 📂 Project Structure
 job-salary-ml/
+
 ├── data/raw/ai_jobs.csv
+
 ├── notebooks/
+
 │   ├── 01_data_understanding.ipynb
 │   ├── 03_feature_engineering.ipynb
 │   ├── 04_model_training.ipynb
